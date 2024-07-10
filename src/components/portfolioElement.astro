@@ -1,0 +1,41 @@
+---
+interface Props {
+  imagen: string;
+  alt: string;
+  titulo: string;
+  descripcion: string;
+  link: string;
+}
+
+const { imagen, alt, titulo, descripcion, link } = Astro.props;
+---
+
+<div
+  class="overflow-hidden rounded-xl shadow-sm shadow-black hover:bg-slate-200">
+  <img
+    src={imagen}
+    width="550"
+    height="310"
+    alt={alt}
+    class="aspect-video w-full object-cover object-center"
+  />
+  <div class="bg-background p-4">
+    <h3 class="text-lg font-bold">{titulo}</h3>
+    <p class="text-muted-foreground">{descripcion}</p>
+  </div>
+  <a
+    href={link}
+    class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors bg-slate-800/20"
+    >Ver Proyecto</a
+  >
+</div>
+
+<style>
+  div:hover {
+    transition: all 0.5s ease-in;
+  }
+
+  div:not(:hover) {
+    transition: all 0.5s ease-out;
+  }
+</style>

@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Menu from "../components/menu.astro";
+import Inicio from "../components/inicio.astro";
+import Servicios from "../components/servicios.astro";
+import Portafolio from "../components/portafolio.astro";
+import Contacto from "../components/contacto.astro";
+import Footer from "../components/footer.astro";
+---
+
+<Layout title="LautaroDevelopers">
+  <div class="flex flex-col min-h-[100dvh]">
+    <Menu />
+    <main class="flex-1">
+      <Inicio />
+      <Servicios />
+      <Portafolio />
+      <Contacto />
+    </main>
+    <footer
+      class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-primary text-primary-foreground">
+      <Footer />
+    </footer>
+  </div>
+</Layout>

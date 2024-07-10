@@ -1,0 +1,38 @@
+<section id="contacto" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+    <div class="container px-4 md:px-6">
+      <div
+        class="flex flex-col items-center justify-center space-y-4 text-center">
+        <div class="space-y-2">
+          <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+            Contáctanos
+          </div>
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+            ¿Listo para empezar?
+          </h2>
+          <p
+            class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Rellena el formulario a continuación y nos pondremos en contacto
+            contigo.
+          </p>
+        </div>
+        <div class="mx-auto w-full max-w-sm space-y-2">
+          <form action="/enviar.php" method="post" class="flex flex-col gap-4">
+
+            <input type="text" id="names" name="nombre" required class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1"
+            placeholder="Nombre">
+
+            <input type="text" id="phone" name="telefono" required class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1"
+            placeholder="Telefono">
+    
+            <input type="text" id="email" name="correo" required class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1"
+            placeholder="Email">
+
+            <textarea id="mensaje" name="mensaje" required class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1 resize-none" placeholder="Mensaje..."></textarea>
+  
+            <input type="submit" id="btnSend" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
